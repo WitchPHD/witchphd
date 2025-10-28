@@ -1,7 +1,5 @@
 ## Greetings!
 
-Usually this is the part where I'd describe how you should use my super simple script... But this isn't really designed for a user to do anything with. 
+This is the readme file for my website, and lives in the repo that is the codebase for my website: witchphd.com
 
-This is the repo Cloudflare reads when updating my website and as such it contains the code for said website: witchphd.com
-
-Enjoy, I guess!
+For some reason, this readme file is also the main readme for my github profile. I encourage you to poke around my website, my script-kiddie apps, and my MTG content.
