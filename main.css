@@ -1,0 +1,165 @@
+/* Main CSS file for WitchPHD's Website */
+
+/* font import
+@font-face {
+    font-family: 'Hack';
+    src: url('med/Hack.ttf');
+}*/
+
+pre, code { font-family: Hack, monospace; }
+
+/* Navigation */
+.navbar{
+    width: 80%;
+    margin: 40px 10%;
+    transform: translate(-56px, -10px);
+    overflow: visible;
+}
+
+.navbar li {
+    list-style: none;
+    margin: auto;
+}
+
+.navbar li a {
+    text-decoration: none; 
+    border: 1px solid #a8e;
+    font-weight: normal;
+    padding: 10px 20px;
+    background: #111;
+    font-size: 24px;
+    float: left;
+    color: #a8e;
+}
+
+.navbar a:hover{
+    transform: translate(-8px, -8px);
+    background: #a8e;
+    color: #111;
+}
+
+.navbar .current a {
+    background: #a8e;
+    color: #111;
+}
+
+/* Starship */
+.starship{
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 24px;
+}
+.nav{
+    text-decoration: none;
+}
+.ssb{
+    background: #938;
+}
+.ss0{
+    color: #938;
+}
+.ss-usr{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    padding-left: 20px;
+    background: #938;
+    color: #111;
+}
+.ss1{
+    background: #d67;
+    color: #938;
+}
+.ss-dir{
+    background: #d67;
+    color: #111;
+}
+.ss2{
+    background: #fa7;
+    color: #d67;
+}
+.ss3{
+    background: #8bd;
+    color: #fa7;
+}
+.ss4{
+    background: #099;
+    color: #8bd;
+}
+.ss5{
+    background: #368;
+    color: #099;
+}
+.ss-ttl{
+    background: #368;
+    color: #111;
+}
+.ss6{
+    color: #368;
+}
+.bnk{
+    animation: blink 1s linear infinite alternate;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Content */
+body {
+    font-family: Hack;
+    background-image: url('');
+    background-color: #223;
+    text-align: center;
+    font-size: 18px;
+    color: #a8e;
+}
+
+p {
+    padding-right: 44px;
+    padding-left: 44px;
+    text-align: left;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #85e;
+}
+
+.box {
+    background-color: #111;
+    border: 1px solid #a8e;
+    overflow: hidden;
+    padding: 15px;
+    margin: auto;
+    clear: both;
+    width: 80%;
+}
+
+/* Some changes for mobile */
+@media screen and (max-width: 600px) {
+    .navbar li a {
+        padding: 8px 18px;
+        font-size: 20px;
+    }
+    .starship{
+        font-size: 20px;
+    }
+    body {
+        font-size: 16px;
+    }
+    .hide {
+        margin: 0px auto 0px 0px;
+        visibility: hidden;
+        display: none;
+        clear: both;
+        float: left;
+        width: 28%;
+    }
+}

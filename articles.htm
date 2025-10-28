@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en' />
+
+<head>
+<title>WitchPHD</title>
+<link rel='icon' type='image/x-icon' href='med/favicon.ico' />
+<link rel='stylesheet' href='main.css' />
+<script src='ping.js'></script>
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css' rel='stylesheet' />
+
+<style>
+.article_list li {
+    list-style: none;
+    margin: auto;
+    width: 40%;
+}
+
+.article_list li{
+    border: 1px solid #a8e;
+    text-decoration: none;
+    display: inline-table;
+    border-radius: 10px;
+    font-weight: normal;
+    padding: 10px;
+    margin: 10px;
+}
+
+.article_list li:hover{
+    transform: translate(-8px, -8px);
+    box-shadow: 8px 8px 0px #938;
+    background: #a8e;
+    color: #111;
+}
+
+.article_list li:hover a{
+    color: #fff;
+}
+
+.article_list img{
+    border-radius: 10px;
+    margin-right: 10px;    float: left;
+
+    width: 40%;
+}
+
+@media screen and (max-width: 800px) {
+  .article_list img{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .article_list li {
+    width: 80%;
+}
+}
+</style>
+
+</head>
+
+<body>
+    <ul class='navbar'>
+        <li><a href='index.html'>Home</a></li>
+        <li class='current'><a href='articles.htm'>Articles</a></li>
+        <li><a href='about.htm'>About</a></li>
+    </ul>
+
+    <div class='box'>
+        <div class='starship'><span class='hide'><span class='ss-usr'>♥  witchphd </span><span class='ss1'></span></a><span class='ss-dir'> ~ </span><span class='ss2'></span><span class='ss3'></span><span class='ss4'></span><span class='ss5'></span></a><span class='ss-ttl'> <span class="ping"></span> ♥ </span><span class='ss6'></span></span> my articles <span class='bnk'>▁ </span></div>
+
+        <br />Interested in reading some of my articles but not sure where to start? Here's a few of my favorites to start you off!
+        <ul class='article_list'>
+            <li><a href='https://witchphd.substack.com/p/understanding-chance'  target='_blank'><img src='med/chance.webp' /></a> One of the most pithy I've ever written, but I still consider it informative for players not entirely familiar with chance.</li>
+            <li><a href='https://witchphd.substack.com/p/always-2-cards-down' target='_blank'><img src='med/down.webp' /></a> This deep dive into the concept of pairity stresses the importance of card advantage.</li>
+            <li><a href='https://witchphd.substack.com/p/demolition-field' target='_blank'><img src='med/demo.webp' /></a> Why you should run <a href='https://scryfall.com/card/bro/260/demolition-field' target='_blank'>Demolition Field</a> and more cards like it.</li>
+            <li><a href='https://witchphd.substack.com/p/the-killspell-timmy' target='_blank'><img src='med/kill.webp' /></a> Many associate the Timmy archetype with battlecruiser magic... but killspells are cool too! An ode to some of my favorites.</li>
+        </ul>
+    </div>
+</body>
+
+</html>

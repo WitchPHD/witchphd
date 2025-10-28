@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en' />
+
+<head>
+<title>WitchPHD</title>
+<link rel='icon' type='image/x-icon' href='med/favicon.ico' />
+<link rel='stylesheet' href='main.css' />
+<script src='ping.js'></script>
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css' rel='stylesheet' />
+
+<style>
+.cd {
+    background-color: #223;
+    margin-right: 60px;
+    margin-left: 60px;
+    padding: 10px;
+}
+</style>
+        
+</head>
+
+<body>
+    <ul class='navbar'>
+        <li><a href='index.html'>Home</a></li>
+		<li><a href='articles.htm'>Articles</a></li>
+        <li><a href='about.htm'>About</a></li>
+        <li class='current'><a href='recover.htm'>Recover</a></li>
+    </ul>
+
+    <div class='box'>
+        <div class='starship'><span class='hide'><span class='ss-usr'>♥  witchphd </span><span class='ss1'></span></a><span class='ss-dir'> ~ </span><span class='ss2'></span><span class='ss3'></span><span class='ss4'></span><span class='ss5'></span></a><span class='ss-ttl'> <span class="ping"></span> ♥ </span><span class='ss6'></span></span> recovery info <span class='bnk'>▁ </span></div>
+
+        <p>This page is just here in case something happens to my PC, so I can quickly re-install all my daily-driver software with a few commands.</p>
+		<p>First, an easy command to install all my applications from arch repo (<i>note: uncomment [multilib] in pacman.conf for steam</i>):</p>
+		<p class='cd'>sudo pacman -S fastfetch power-profiles-daemon firefox thunderbird libreoffice-fresh telegram kitty vlc steam pika-backup gimp transmission-qt gwenview python obs-studio v4l2loopback-dkms ttf-hack-nerd noto-fonts-cjk</p>
+		<p>Secondly, let's set up paru for easy AUR installation:</p>
+		<p class='cd'>sudo pacman -S --needed base-devel<br />git clone https://aur.archlinux.org/paru.git<br />cd paru<br />makepkg -si</p>
+		<p>Finally, the AUR package install (<i>note: only the edvi-dkms-git version of displaylink works with my dock</i>):</p>
+		<p class='cd'>paru -S discord-canary displaylink</p>
+</body>
+
+</html>
