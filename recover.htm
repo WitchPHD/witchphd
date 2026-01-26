@@ -16,6 +16,11 @@
     margin-left: 60px;
     padding: 10px;
 }
+.st {
+    font-weight: bold;
+    font-size: 120%;
+    color: #c22;
+}
 </style>
         
 </head>
@@ -32,13 +37,8 @@
         <div class='starship'><span class='hide'><span class='ss-usr'>♥  witchphd </span><span class='ss1'></span></a><span class='ss-dir'> ~ </span><span class='ss2'></span><span class='ss3'></span><span class='ss4'></span><span class='ss5'></span></a><span class='ss-ttl'> <span class="ping"></span> ♥ </span><span class='ss6'></span></span> recovery info <span class='bnk'>▁ </span></div>
 
         <br /><i>Note: This page is for my personal use. Effectively a backup to quickly re-setup my daily driver</i>
-        <p>Currently my DE of choice is <a href='https://wiki.archlinux.org/title/GNOME'>GNOME</a>, but I've removed some extrenous packages after installing:</p>
-        <p class='cd'>sudo pacman -S gnome && sudo pacman -R gnome-calendar gnome-weather gnome-tour gnome-music gnome-maps gnome-contacts gnome-console epiphany</p>
-        <p>Arch repo installations (<i>notes: uncomment [multilib] in etc/pacman.conf before, and enable <a href='https://wiki.archlinux.org/title/Uncomplicated_Firewall'>ufw</a> & <a href='https://wiki.archlinux.org/title/Fail2ban'>fail2ban</a> after</i>):</p>
-		<p class='cd'>sudo pacman -S ttf-hack-nerd noto-fonts-cjk ufw fail2ban kitty man-db starship neovim vim-nerdtree python firefox thunderbird libreoffice-fresh telegram gwenview vlc gimp steam obs-studio v4l2loopback-dkms</p>
-		<p>Install <a href='https://github.com/Morganamilo/paru'>paru</a> to install AUR packages (<i>note: only the edvi-dkms-git version of displaylink works with my dock</i>):</p>
-		<p class='cd'>paru -S discord-canary displaylink</p>
-		<p>Final touches: dark theme, purple accent color, enable night light, [super+space] to start kitty, [alt+space] to open files and <a href='med/rec.tar.xz'>this tarball</a> for everything else.</p>
-</body>
+        <p><a href='med/rec.tar.xz'>This tarball</a> should contain everything necessary to quickly set-up my system essentials:</p>
+        <p class='cd'><span class='st'> > </span>run installers.sh<br /><span class='st'> > </span>run restore.sh<br /><span class='st'> > </span>set [super + space] to start kitty<br /><span class='st'> > </span>set [alt + space] to open files<br /><span class='st'> > </span>set wallpaper<br /><span class='st'> > </span>set GNOME to dark theme<br /><span class='st'> > </span>set GNOME to purple accent color<br /><span class='st'> > </span>enable GNOME "night light"<br /></p>
+        </body>
 
 </html>
