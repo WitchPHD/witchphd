@@ -153,6 +153,7 @@
     kdePackages.gwenview
     vlc
     gimp
+    virtualbox
     obs-studio
     linuxKernel.packages.linux_zen.v4l2loopback
     # security
