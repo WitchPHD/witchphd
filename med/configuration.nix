@@ -43,7 +43,6 @@
 
   # set fonts
   fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
     nerd-fonts.hack      
     noto-fonts
     noto-fonts-cjk-sans
@@ -84,6 +83,12 @@
     decibels
     epiphany
   ];
+
+  # set default terminal emulator
+  xdg.terminal-exec = {
+    enable = true;
+    settings.default = ["kitty"];
+  };
 
   # pipewire sound
   services.pulseaudio.enable = false;
