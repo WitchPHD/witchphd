@@ -11,19 +11,23 @@
 
 <script>
 function shuffle() {
-        var articles = [
-                "<a href='https://witchphd.substack.com/p/understanding-chance'  target='_blank'><img src='med/chance.webp' /></a> One of the most pithy I've ever written, but I still consider it informative for players not entirely familiar with chance.", 
-                "<a href='https://witchphd.substack.com/p/always-2-cards-down' target='_blank'><img src='med/down.webp' /></a> This deep dive into the concept of pairity stresses the importance of card advantage.", 
-                "<a href='https://witchphd.substack.com/p/demolition-field' target='_blank'><img src='med/demo.webp' /></a> Why you should run <a href='https://scryfall.com/card/bro/260/demolition-field' target='_blank'>Demolition Field</a> and more cards like it.", 
-                "<a href='https://witchphd.substack.com/p/the-killspell-timmy' target='_blank'><img src='med/kill.webp' /></a> Many associate the Timmy archetype with battlecruiser magic... but killspells are cool too! An ode to some of my favorites.", 
-                "<a href='https://witchphd.substack.com/p/whyhow-you-should-invest' target='_blank'><img src='med/invest.webp' /></a> I usually write about MTG, but this article is a crash course in investing (written with my usual prose)."
+        var feats = [
+                "<a href='https://witchphd.substack.com/p/understanding-chance'  target='_blank'><img src='med/art/chance.webp' /></a> One of the most pithy I've ever written, but I still consider it informative for players not entirely familiar with chance.", 
+                "<a href='https://witchphd.substack.com/p/always-2-cards-down' target='_blank'><img src='med/art/down.webp' /></a> This deep dive into the concept of pairity stresses the importance of card advantage.", 
+                "<a href='https://witchphd.substack.com/p/demolition-field' target='_blank'><img src='med/art/demo.webp' /></a> Why you should run <a href='https://scryfall.com/card/bro/260/demolition-field' target='_blank'>Demolition Field</a> and more cards like it.", 
+                "<a href='https://witchphd.substack.com/p/the-killspell-timmy' target='_blank'><img src='med/art/kill.webp' /></a> Many associate the Timmy archetype with battlecruiser magic... but killspells are cool too! An ode to some of my favorites.", 
+                "<a href='https://witchphd.substack.com/p/whyhow-you-should-invest' target='_blank'><img src='med/art/invest.webp' /></a> I usually write about MTG, but this article is a crash course in investing (written with my usual prose)."
         ];
-        var shuffled = articles.sort(() => Math.random() - 0.5);
-        document.getElementById('article_one').innerHTML = shuffled[0]
-        document.getElementById('article_two').innerHTML = shuffled[1]
-        document.getElementById('article_three').innerHTML = shuffled[2]
+         
+        for (let i = feats.length - 1; i > 0; i--){
+                var j = Math.floor(Math.random() * (i+1));
+                [feats[i], feats[j]] = [feats[j], feats[i]];
+        }
 
-        document.getElementById('article_four').innerHTML = shuffled[3]
+        document.getElementById('feat_one').innerHTML = feats[0]
+        document.getElementById('feat_two').innerHTML = feats[1]
+        document.getElementById('feat_three').innerHTML = feats[2]
+        document.getElementById('feat_four').innerHTML = feats[3]
 }
 </script>
 
@@ -87,10 +91,10 @@ function shuffle() {
 
         <br />Interested in reading some of my articles but not sure where to start? Here's a few of my favorites to start you off!
         <ul class='article_list'>
-                <li><div id='article_one'></div></li>
-                <li><div id='article_two'></div></li>
-            <li id='article_three'></li>
-            <li id='article_four'></li>
+                <li><div id='feat_one'></div></li>
+                <li><div id='feat_two'></div></li>
+                <li id='feat_three'></li>
+                <li id='feat_four'></li>
         </ul>
     </div>
 </body>
