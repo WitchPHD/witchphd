@@ -123,6 +123,13 @@ p {
     padding-left: 44px;
     text-align: left;
 }
+.footer{
+    padding-right: 87px;
+    padding-left: 87px;
+    font-style: italic;
+    font-size: 79%;
+}
+
 
 a,
 a:link,
