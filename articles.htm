@@ -33,70 +33,70 @@ function shuffle() {
 
 <style>
 .article_list li {
-    list-style: none;
-    margin: auto;
-    width: 40%;
+        list-style: none;
+        margin: auto;
+        width: 40%;
 }
 
 .article_list li{
-    border: 1px solid #a8e;
-    text-decoration: none;
-    display: inline-table;
-    border-radius: 10px;
-    font-weight: normal;
-    padding: 10px;
-    margin: 10px;
+        border: 1px solid #a8e;
+        text-decoration: none;
+        display: inline-table;
+        border-radius: 10px;
+        font-weight: normal;
+        padding: 10px;
+        margin: 10px;
 }
 
 .article_list li:hover{
-    transform: translate(-8px, -8px);
-    box-shadow: 8px 8px 0px #938;
-    background: #a8e;
-    color: #111;
+        transform: translate(-8px, -8px);
+        box-shadow: 8px 8px 0px #938;
+        background: #a8e;
+        color: #111;
 }
 
 .article_list li:hover a{
-    color: #fff;
+        color: #fff;
 }
 
 .article_list img{
-    border-radius: 10px;
-    margin-right: 10px;    float: left;
+        border-radius: 10px;
+        margin-right: 10px;    float: left;
 
-    width: 40%;
+        width: 40%;
 }
 
 @media screen and (max-width: 800px) {
-  .article_list img{
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  .article_list li {
-    width: 80%;
-}
+        .article_list img{
+                margin-bottom: 10px;
+                width: 100%;
+        }
+        .article_list li {
+                width: 80%;
+        }
 }
 </style>
 
 </head>
 
 <body onload='shuffle()'>
-    <ul class='navbar'>
-        <li><a href='/'>Home</a></li>
-        <li class='current'><a href=''>Articles</a></li>
-        <li><a href='about'>About</a></li>
-    </ul>
-
-    <div class='box'>
-        <div class='starship'><span class='hide'><span class='ss-usr'>♥  witchphd </span><span class='ss1'></span></a><span class='ss-dir'> ~ </span><span class='ss2'></span><span class='ss3'></span><span class='ss4'></span><span class='ss5'></span></a><span class='ss-ttl'> <span class="ping"></span> ♥ </span><span class='ss6'></span></span> my articles <span class='bnk'>▁ </span></div>
-
-        <br />Interested in reading some of my articles but not sure where to start? Here's a few of my favorites to start you off!
-        <ul class='article_list'>
-                <li><div id='feat_one'></div></li>
-                <li><div id='feat_two'></div></li>
-                <li id='feat_three'></li>
-                <li id='feat_four'></li>
+        <ul class='navbar'>
+                <li><a href='/'>Home</a></li>
+                <li class='current'><a href=''>Articles</a></li>
+                <li><a href='about'>About</a></li>
         </ul>
-    </div>
+
+        <div class='box'>
+                <div class='starship'><span class='hide'><span class='ss-usr'>♥  witchphd </span><span class='ss1'></span></a><span class='ss-dir'> ~ </span><span class='ss2'></span><span class='ss3'></span><span class='ss4'></span><span class='ss5'></span></a><span class='ss-ttl'> <span class="ping"></span> ♥ </span><span class='ss6'></span></span> my articles <span class='bnk'>▁ </span></div>
+
+                <br />Interested in reading some of my articles but not sure where to start? Here's a few of my favorites to start you off!
+                <ul class='article_list'>
+                        <li><div id='feat_one'></div></li>
+                        <li><div id='feat_two'></div></li>
+                        <li id='feat_three'></li>
+                        <li id='feat_four'></li>
+                </ul>
+        </div>
 </body>
 
 </html>
