@@ -9,7 +9,7 @@
 pre, code { font-family: Hack, monospace; }
 
 /* Navigation */
-.navbar{
+.navbar {
         width: 80%;
         margin: 40px 10%;
         transform: translate(-56px, -10px);
@@ -32,7 +32,7 @@ pre, code { font-family: Hack, monospace; }
         color: #a8e;
 }
 
-.navbar a:hover{
+.navbar a:hover {
         transform: translate(-8px, -8px);
         background: #a8e;
         color: #111;
@@ -44,59 +44,59 @@ pre, code { font-family: Hack, monospace; }
 }
 
 /* Starship */
-.starship{
+.starship {
         padding: 10px 20px;
         text-align: left;
         font-size: 24px;
 }
-.nav{
+.nav {
         text-decoration: none;
 }
-.ssb{
+.ssb {
         background: #938;
 }
-.ss0{
+.ss0 {
         color: #938;
 }
-.ss-usr{
+.ss-usr {
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
         padding-left: 20px;
         background: #938;
         color: #111;
 }
-.ss1{
+.ss1 {
         background: #d67;
         color: #938;
 }
-.ss-dir{
+.ss-dir {
         background: #d67;
         color: #111;
 }
-.ss2{
+.ss2 {
         background: #fa7;
         color: #d67;
 }
-.ss3{
+.ss3 {
         background: #8bd;
         color: #fa7;
 }
-.ss4{
+.ss4 {
         background: #099;
         color: #8bd;
 }
-.ss5{
+.ss5 {
         background: #368;
         color: #099;
 }
-.ss-ttl{
+.ss-ttl {
         background: #368;
         color: #111;
 }
-.ss6{
+.ss6 {
         color: #368;
 }
-.bnk{
+.bnk {
         animation: blink 1s linear infinite alternate;
 }
 @keyframes blink {
@@ -123,7 +123,7 @@ p {
         padding-left: 44px;
         text-align: left;
 }
-.footer{
+.footer {
         padding: 20px;
         padding-right: 87px;
         padding-left: 87px;
@@ -156,7 +156,7 @@ a:active {
                 padding: 8px 18px;
                 font-size: 20px;
         }
-        .starship{
+        .starship {
                 font-size: 20px;
         }
         body {
