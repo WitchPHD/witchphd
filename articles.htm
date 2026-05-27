@@ -11,7 +11,7 @@
 
 <script>
         function shuffle() {
-                var feats = [
+                var items = [
                         "<a href='https://witchphd.substack.com/p/understanding-chance'  target='_blank'><img src='med/art/chance.webp' /></a> One of the most pithy I've ever written, but I still consider it informative for players not entirely familiar with chance.", 
                         "<a href='https://witchphd.substack.com/p/always-2-cards-down' target='_blank'><img src='med/art/down.webp' /></a> This deep dive into the concept of pairity stresses the importance of card advantage.", 
                         "<a href='https://witchphd.substack.com/p/demolition-field' target='_blank'><img src='med/art/demo.webp' /></a> Why you should run <a href='https://scryfall.com/card/bro/260/demolition-field' target='_blank'>Demolition Field</a> and more cards like it.",
@@ -20,25 +20,19 @@
                         "<a href='https://witchphd.substack.com/p/whyhow-you-should-invest' target='_blank'><img src='med/art/invest.webp' /></a> I usually write about MTG, but this article is a crash course in investing (written with my usual prose)."
                 ];
          
-                for (let i = feats.length - 1; i > 0; i--){
+                for (let i = items.length - 1; i > 0; i--){
                         var j = Math.floor(Math.random() * (i+1));
-                        [feats[i], feats[j]] = [feats[j], feats[i]];
+                        [items[i], items[j]] = [items[j], items[i]];
                 }
 
-                document.getElementById('feat_one').innerHTML = feats[0]
-                document.getElementById('feat_two').innerHTML = feats[1]
-                document.getElementById('feat_three').innerHTML = feats[2]
-                document.getElementById('feat_four').innerHTML = feats[3]
+                document.getElementById('feat_01').innerHTML = items[0]
+                document.getElementById('feat_02').innerHTML = items[1]
+                document.getElementById('feat_03').innerHTML = items[2]
+                document.getElementById('feat_04').innerHTML = items[3]
         }
 </script>
 
 <style>
-        .article_list li {
-                list-style: none;
-                margin: auto;
-                width: 40%;
-        }
-
         .article_list li {
                 border: 1px solid #a8e;
                 text-decoration: none;
@@ -47,6 +41,7 @@
                 font-weight: normal;
                 padding: 10px;
                 margin: 10px;
+                width: 40%
         }
 
         .article_list li:hover {
@@ -92,10 +87,10 @@
 
                 <br />Interested in reading some of my articles but not sure where to start? Here's a few of my favorites to start you off!
                 <ul class='article_list'>
-                        <li><div id='feat_one'></div></li>
-                        <li><div id='feat_two'></div></li>
-                        <li id='feat_three'></li>
-                        <li id='feat_four'></li>
+                        <li id='feat_01'></li>
+                        <li id='feat_02'></li>
+                        <li id='feat_03'></li>
+                        <li id='feat_04'></li>
                 </ul>
         </div>
 </body>

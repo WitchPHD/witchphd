@@ -8,38 +8,58 @@
 <script src='ping.js'></script>
 <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 <link href='https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css' rel='stylesheet' />
+
+
+<script>
+        function shuffle() {
+                var items = [
+                        "<span class='outline'>Drying Rack: $40</span> It's worth it to air-dry. Your clothes last longer and you save money in long run on your electric bill. Plus air drying doesn't 'lock in' stains the way a dryer does. Also, 99% of the time you should use the 'cold' and 'regular' settings.",
+                        "<span class='outline'>Shammy Cloths: $23 (10 pc)</span> <span class='outline'>Cuban Mop: $20</span> Shammies are cheap machine-washable cloths are great for cleaning, so that you can spend less on paper towels (and create less paper waste). Keep some paper towels handy though, as there are some messes that are just better cleaned by disposables. A cuban mop is just a durable t-shaped stick you fold said cloths over to mop floors with.", 
+                        "<span class='outline'>Glass Bottle: $10</span> <span class='outline'>Fabuloso: 10$</span> You can fill a refillable spray bottle by mixing a cheap cleaner like Fabuloso or Pinesol with water. It's more cost effective and environmentally friendly than buying pre-mixed spray.",
+                        "<span class='outline'>Cleanser: $15</span> <span class='outline'>Retinoid: $15</span> Unless you have special dermatology needs, you only need two products for skin care: a cleanser in the morning and a retinoid at night. For the cleanser, you're looking for niacinamide and hyaluronic acid (optionally, salicylic acid), and for the retinoid either retinal (0.2%) or retinol (between 0.5% and 1%).", 
+                        "<span class='outline'>Aeropress: $40</span> This is one of my preferred coffee brewing methods, and it feels pretty luxury compared to the cost the cost. These things have gone up in price since I bouth mine, but I'd say they're still worth it."
+                ];
+         
+                for (let i = items.length - 1; i > 0; i--){
+                        var j = Math.floor(Math.random() * (i+1));
+                        [items[i], items[j]] = [items[j], items[i]];
+                }
+
+                document.getElementById('item_01').innerHTML = items[0]
+                document.getElementById('item_02').innerHTML = items[1]
+                document.getElementById('item_03').innerHTML = items[2]
+                document.getElementById('item_04').innerHTML = items[3]
+                document.getElementById('item_05').innerHTML = items[4]
+        }
+</script>
+
 <style>
-        table {
-                border-spacing: 14px;
-                margin-right: auto;
-                margin-left: auto;
-                text-align: left;
-                display: block;
-                width: 840px;
-        }
-        td {
+        .item_list li {
                 border: 1px solid #a8e;
+                margin: auto auto;
+                margin-bottom: 10px;
+                text-align: left;
+                list-style: none;
                 padding: 8px;
+                width: 80%;
         }
-        .name {
+        .outline {
                 border: 1px solid #a8e;
                 padding-right: 8px;
                 padding-left: 8px;
-        }
-        .cost {
-                text-align: center;
-                width: 88px;
+                color: #000;
+                background: #a8e;
         }
         /* some changes for mobile */
         @media screen and (max-width: 600px) {
-                table {
-                        width: 80%;
+                .item_list li {
+                        width: 100%;
                 }
         }
 </style>
 </head>
 
-<body>
+<body onload='shuffle()'>
         <ul class='navbar'>
                 <li><a href='/'>Home</a></li>
 	        <li><a href='articles'>Articles</a></li>
@@ -51,33 +71,15 @@
                 <div class='starship'><span class='hide'><span class='ss-usr'>♥  witchphd </span><span class='ss1'></span></a><span class='ss-dir'> ~ </span><span class='ss2'></span><span class='ss3'></span><span class='ss4'></span><span class='ss5'></span></a><span class='ss-ttl'> <span class="ping"></span> ♥ </span><span class='ss6'></span></span> lifestyle <span class='bnk'>▁ </span></div>
                 
                 <p>A list of things I've found to be cost-effective for someone living alone. Trying not to shill for any brands in particular.</p>
-                <table>
-                        <tr>
-                                <td><span class='name'>Drying Rack:</span> It's worth it to air-dry. Your clothes last longer and you save money in long run on your electric bill. Plus air drying doesn't 'lock in' stains the way a dryer does. Also, 99% of the time you should use the 'cold' and 'regular' settings.</td>
-                                <td class='cost hide'>Rack:<br />40$</td>
-                        </tr>
-                        </tr>
-                                <td><span class='name'>Shammy Cloths:</span> These cheap machine-washable cloths are great for cleaning, so that you can spend less on paper towels (and create less paper waste). Keep some paper towels handy though, as there are some messes that are just better cleaned by disposables. They come in a 10-pack for like twenty bucks.</td>
-                                <td class='cost hide'>Shammy:<br />23$</td>
-                        </tr>
-                         <tr>
-                                <td><span class='name'>Glass Bottle:</span> You can fill a refillable spray bottle by mixing a cheap cleaner like Fabuloso or Pinesol with water. It's more cost effective and environmentally friendly than buying pre-mixed spray.</td>
-                                <td class='cost hide'>Bottle:<br />10$<br />Fabuloso:<br />10$</td>
-                        </tr>
-                        <tr>
-                                <td><span class='name'>Cuban Mop:</span> Basically a wooden and durable t-shaped stick you fold a wet washcloth over to mop floors with. Basically another use for the versatile shammy cloth, which are cheaper and easier to clean and replace than traditional mop heads.</td>
-                                <td class='cost hide'>Mop:<br />20$</td>
-                        </tr>
-                        <tr>
-                                <td><span class='name'>Skin Care:</span> Unless you have special dermatology needs, you only need two products for skin care: a cleanser in the morning and a retinoid at night. For the cleanser, you're looking for niacinamide and hyaluronic acid (optionally, salicylic acid), and for the retinoid either retinal (0.2%) or retinol (between 0.5% and 1%).</td>
-                                <td class='cost hide'>Cleanser:<br />$15<br />Retinoid: $15</td>
-                        </tr>
-                        <tr>
-                                <td><span class='name'>Aeropress:</span> This is one of my preferred coffee brewing methods, and it feels pretty luxury compared to the cost the cost. These things have gone up in price since I bouth mine, but I'd say they're still worth it.</td>
-                                <td class='cost hide'>Aeropress:<br />$15</td>
-                        </tr>
-
-                </table>
+                
+                <ul class='item_list'>
+                        <li id='item_01'></li>
+                        <li id='item_02'></li>
+                        <li id='item_03'></li>
+                        <li id='item_04'></li>
+                        <li id='item_05'></li>
+                </ul>
+                  
                 <p class='footer'>this page is unfinished</p>
         </div>
 </body>
