@@ -14,72 +14,51 @@
                 border-collapse: collapse;
                 margin-right: auto;
                 margin-left: auto;
-                display: block;
-                width: 640px;
         }
         td {
+                display: inline-block;
                 vertical-align: top;
                 border-style: dashed;
+                margin: auto auto;
                 width: 300px;
         } 
         table p {
                 text-decoration: underline;
                 font-size: 120%;
         }	
-        .port-ira {
+        .port {
 		display: inline-block;
 		margin: 20px;
 		width: 240px;
 		height: 240px;
 		border-radius: 50%;
 		background-image: conic-gradient(
-			#368 0deg, #368 108deg,
-			#099 108deg, #099 216deg,
-			#8bd 216deg, #8bd 288deg,
-			#938 288deg, #938 324deg,
-			#368 324deg, #368 360deg
+			#07b 0deg, #07b 144deg,
+			#5be 144deg, #5be 288deg,
+			#829 288deg, #829 324deg,
+			#07b 324deg, #07b 360deg
 		);
-	}
-        .port-tax {
-		display: inline-block;
-		margin: 20px;
-		width: 240px;
-		height: 240px;
-		border-radius: 50%;
-		background-image: conic-gradient(
-			#368 0deg, #368 108deg,
-			#099 108deg, #099 252deg,
-                        #8bd 252deg, #8bd 324deg,
-			#368 324deg, #368 360deg
-		);
-	}
+	} 
 	.VTI {
 		font-size: 110%;
-		color: #368;
+		color: #07b;
 	}
 	.VXUS {
-		font-size: 110%;
-		color: #099;
-	}
-        .VYM {
 		font-size: 110%;
 		color: #8bd;
 	}
 	.BNDW {
 		font-size: 110%;
-		color: #938;
+		color: #829;
 	}
         .VMFXX{
 		font-size: 110%;
-		color: #fa7;
+		color: #e90;
         }
         /* move portfolio graphs on mobile*/
         @media screen and (max-width: 600px) {
                 table {
                         width: 320px;
-                }
-                td {
-                        display: inline-block;
                 }
         }
 </style>
@@ -95,26 +74,19 @@
         </ul>
 
         <div class='box'>
-                <div class='starship'><span class='hide'><span class='ss-usr'>♥  witchphd </span><span class='ss1'></span></a><span class='ss-dir'> ~ </span><span class='ss2'></span><span class='ss3'></span><span class='ss4'></span><span class='ss5'></span></a><span class='ss-ttl'> <span class="ping"></span> ♥ </span><span class='ss6'></span></span> my 'lazy portfolios' <span class='bnk'>▁ </span></div>
+                <div class='starship'><span class='hide'><span class='ss-usr'>♥  witchphd </span><span class='ss1'></span></a><span class='ss-dir'> ~ </span><span class='ss2'></span><span class='ss3'></span><span class='ss4'></span><span class='ss5'></span></a><span class='ss-ttl'> <span class="ping"></span> ♥ </span><span class='ss6'></span></span> my 'lazy portfolio' <span class='bnk'>▁ </span></div>
                 <p> Personally I'm a big fan of <a href='https://www.bogleheads.org/wiki/Bogleheads%C2%AE_investment_philosophy'>Jack Bogle's Investment Philsophy</a>, which emphasizes long-term buying-and-holding of low-cost index funds — and I highly encourage anyone who hasn't started planning for the future to set up an account on <a href='https://investor.vanguard.com'/>Vanguard</a> and do exactly that.</p>
                 <table><tr>
                         <td>
-                                <p>Tax-Protected:</p>
-                                <br /><div class='port-ira'></div>
-                                <br />[<span class='VTI'>40% VTI</span>]<br />[<span class='VXUS'>30% VXUS</span>]<br />[<span class='VYM'>20% VYM</span>]<br />[<span class='BNDW'>10% BNDW</span>]
-                                <br />
-                                <br />
-                        </td>
-                        <td>
-                                <p>Taxable:</p>
-                                <br /><div class='port-tax'></div>
-                                <br />[<span class='VTI'>40% VTI</span>]<br />[<span class='VXUS'>40% VXUS</span>]<br />[<span class='VYM'>20% VYM</span>]<br />
+                                <p>Portfolio:</p>
+                                <br /><div class='port'></div>
+                                <br />[<span class='VTI'>50% VTI</span>]<br />[<span class='VXUS'>40% VXUS</span>]<br />[<span class='BNDW'>10% BNDW</span>]
                                 <br />
                                 <br />
                         </td>
                 </tr></table>
-                <p>Many 'Bogleheads' follow <a href='https://www.bogleheads.org/wiki/Three-fund_portfolio'>a simple 3-fund portfolio</a> which holds some amount of <span class='VTI'>VTI (All U.S. Stocks)</span>, <span class='VXUS'>VXUS (All Outside-U.S. Stocks)</span>, and <span class='BNDW'>BNDW (All World Bonds)</span> to broadly invest in the whole market.</p>
-                <p>My blueprint adds <span class='VYM'>VYM (High Dividend Yield)</span> into the mix, which invests in dividend-paying blue-chip stocks. I forgo <span class='BNDW'>BNDW</span> in taxable accounts and keep a small emergency fund account with <span class='VMFXX'>VMFXX (Federal Money Market Fund)</span>, which is a high-yield cash-equivalent.</p>
+                <p>My investment blueprint is a <a href='https://www.bogleheads.org/wiki/Three-fund_portfolio'>a simple 'Boglehead' 3-fund portfolio</a>. Basically, by holding which holding <span class='VTI'>VTI (All U.S. Stocks)</span>, <span class='VXUS'>VXUS (All Outside-U.S. Stocks)</span>, and <span class='BNDW'>BNDW (All World Bonds)</span> you can broadly invest in and own the whole market</p>
+                <p>I forgo <span class='BNDW'>BNDW</span> in taxable accounts (for more <span class='VXUS'>VXUS</span>) and keep a small emergency fund account with a high-yield cash-equivalent :(<span class='VMFXX'>VMFXX (Federal Money Market Fund)</span>).</p>
                 <p class='footer'>Disclaimer: I am not a financial advisor. I believe my methods are sound, but everyone's financial situation is different; any online advice is to be followed <b>AT YOUR OWN RISK!!</b></p> 
         </div>
 </body>
