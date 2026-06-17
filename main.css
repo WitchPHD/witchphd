@@ -156,7 +156,7 @@ a:active {
         background-color: #111;
         border: 1px solid #a8e;
         overflow: hidden;
-        padding: 15px;
+        padding: 14px;
         margin: auto;
         clear: both;
         width: 80%;
@@ -177,6 +177,10 @@ a:active {
         p {
                 padding-right: 12px;
                 padding-left: 12px;
+        }
+        .box {
+                padding: 10px;
+                width: 90%;
         }
         .hide {
                 margin: 0px auto 0px 0px;
