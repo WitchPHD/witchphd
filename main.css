@@ -15,7 +15,6 @@ pre, code { font-family: Hack, monospace; }
         transform: translate(-56px, -10px);
         overflow: visible;
 }
-
 .navbar li {
         list-style: none;
         margin: auto;
@@ -27,7 +26,7 @@ pre, code { font-family: Hack, monospace; }
         font-weight: normal;
         padding: 10px 20px;
         background: #111;
-        font-size: 24px;
+        font-size: 22px;
         float: left;
         color: #a8e;
 }
@@ -47,7 +46,7 @@ pre, code { font-family: Hack, monospace; }
 .starship {
         padding: 10px 20px;
         text-align: left;
-        font-size: 24px;
+        font-size: 22px;
 }
 .nav {
         text-decoration: none;
@@ -114,7 +113,7 @@ body {
         background-image: url('');
         background-color: #223;
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         color: #a8e;
 }
 p {
@@ -164,15 +163,15 @@ a:active {
 
 /* Some changes for mobile */
 @media screen and (max-width: 600px) {
+        .navbar {
+                width: 90%;
+        }
         .navbar li a {
                 padding: 8px 18px;
                 font-size: 18px;
         }
         .starship {
                 font-size: 18px;
-        }
-        body {
-                font-size: 14px;
         }
         p {
                 padding-right: 12px;
