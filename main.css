@@ -9,11 +9,12 @@
 pre, code { font-family: Hack, monospace; }
 
 /* Navigation */
-.navbar {
-        width: 80%;
-        margin: 40px 10%;
+.navbar { 
         transform: translate(-56px, -10px);
         overflow: visible;
+        margin: 40px 10%;       
+        width: 80%;        
+
 }
 .navbar li {
         list-style: none;
@@ -164,6 +165,7 @@ a:active {
 /* Some changes for mobile */
 @media screen and (max-width: 600px) {
         .navbar {
+                margin: 40px 5%;
                 width: 90%;
         }
         .navbar li a {
