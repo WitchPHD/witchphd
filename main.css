@@ -165,7 +165,7 @@ a:active {
 /* Some changes for mobile */
 @media screen and (max-width: 600px) {
         .navbar {
-                margin: 40px 5%;
+                margin: 40px 6%;
                 width: 90%;
         }
         .navbar li a {
