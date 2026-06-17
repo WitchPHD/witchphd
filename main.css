@@ -128,9 +128,14 @@ p {
         padding-right: 87px;
         padding-left: 87px;
         font-style: italic;
-        font-size: 79%;
+        font-size: 80%;
 }
-
+.bullet {
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+        text-align: left;
+}
 
 a,
 a:link,
@@ -169,5 +174,14 @@ a:active {
                 clear: both;
                 float: left;
                 width: 28%;
+        }
+        .footer {
+                padding: 10px;
+                padding-right: 20px;
+                padding-left: 20px;
+        }
+        .bullet {
+                padding: 4px;
+                margin: 4px;
         }
 }
