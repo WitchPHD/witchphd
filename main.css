@@ -132,9 +132,18 @@ p {
 }
 .bullet {
         display: inline-block;
-        padding: 0px;
-        margin: 0px;
+}
+.bullet li {
         text-align: left;
+        padding: 4px;
+        margin: 4px;
+        padding-left: 24px;
+        margin-left: 24px;
+}
+.bullet .lbl {
+        list-style-type: none;
+        padding-left: 0px;
+        margin-left: 0px;
 }
 
 a,
@@ -159,13 +168,13 @@ a:active {
 @media screen and (max-width: 600px) {
         .navbar li a {
                 padding: 8px 18px;
-                font-size: 20px;
+                font-size: 18px;
         }
         .starship {
-                font-size: 20px;
+                font-size: 18px;
         }
         body {
-                font-size: 16px;
+                font-size: 14px;
         }
         .hide {
                 margin: 0px auto 0px 0px;
